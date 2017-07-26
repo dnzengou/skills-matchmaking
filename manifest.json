@@ -1,0 +1,22 @@
+{
+  "name": "job titles and neighbors network chart by @DesireYavro",
+  "short_name": "job titles network chart",
+  "icons": [{
+        "src": "images/favicons/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      }, {
+        "src": "images/favicons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }, {
+        "src": "images/favicons/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      }],
+  "start_url": "/?homescreen=1",
+  "background_color": "#3E4EB8",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2E3AA1"
+}

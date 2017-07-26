@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "Job Titles Network Chart",
+  "launch_path": "/?homescreen=1",
+  "description": "Connecting jobs using machine learning: tell me what job you hold, I'll tell which is the closest to yours.",
+  "developer": {
+    "name": "desireyavro",
+    "url": "http://desireyavro.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Job Titles Network Chart",
+      "description": "Connecting jobs using machine learning: tell me what job you hold, I'll tell which is the closest to yours."
+    }
+  }
+}
