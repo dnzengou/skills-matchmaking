@@ -54,6 +54,18 @@
     <!-- For shared styles, shared-styles.html import in elements.html -->
     <style is="custom-style" include="shared-styles"></style>
 
+    <script type="text/javascript">
+    function createKeenWebAutoCollector(){
+      window.keenWebAutoCollector=window.KeenWebAutoCollector.create({projectId:'5979efa3c9e77c00012a2a07',writeKey:'9BD9FCB8CD2ECDE6014C5CF00688BFF4B33CCB24B62C196EC12CA3E3FE93668CE154CE10F58C5CBC1FFE525395AEBFD55EC9365E75791CBF43197941217F4B51EAA5AA55F3989F57712CE9C567D439D5669D9D7E0FA827CAAB1B1951CDB90316',onloadCallbacks:window.keenWebAutoCollector.onloadCallbacks}),
+    window.keenWebAutoCollector.loaded()
+    }
+    function initKeenWebAutoCollector(){
+      window.keenWebAutoCollector.domReady()?window.createKeenWebAutoCollector():document.addEventListener("readystatechange",function(){window.keenWebAutoCollector.domReady()&&window.createKeenWebAutoCollector()})}window.keenWebAutoCollector={onloadCallbacks:[],onload:function(a){this.onloadCallbacks.push(a)},domReady:function(){return["ready","complete"].indexOf(document.readyState)>-1}
+    };
+    </script>
+  <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
+  </script>
+
   </head>
 
   <body>
