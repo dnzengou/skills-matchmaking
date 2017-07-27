@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Display the closest_job_titles CSV file as a searchable, filterable, user-friendly HTML table for quick search on-the-go.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="@DesireYavro">
+    <!--<script async src="site.js"></script>
+    <link rel="manifest" href="manifest.json" />-->
+    <title>Closest Jobs Table</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ===========================
+  FONTS & ICONS
+  =========================== -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#2E3AA1">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Jobs Network Chart">
+    <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Jobs Network Chart">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/favicons/ms-touch-icon-144x144-precomposed.png">
+
+    <!-- For shared styles, shared-styles.html import in elements.html -->
+    <style is="custom-style" include="shared-styles"></style>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <h3 style="color:#b5b5b5">Closest Job Titles Table</h3>
+
+      <p>Display the closest_job_titles CSV file as a searchable, filterable, user-friendly HTML table for quick search on-the-go.</p>
+
+
+      <div id='table-container'></div>
+
+    </div><!-- /.container -->
+
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <hr />
+        <p>&copy; 2017 <a href="desireyavro.com">desireyavro</a> - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i>.
+        <code>Inspired by Derek Eder <a href='https://github.com/derekeder/csv-to-html-table'>code on GitHub</a></code>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src='js/csv_to_html_table.js'></script>
+
+    <script>
+      init_table({
+        csv_path: 'data/closest_job_titles.expanded_ordered_subset4.csv',
+        element: 'table-container',
+        allow_download: true,
+        csv_options: {separator: '\t', delimiter: '"'},
+        datatables_options: {"paging": false}
+      });
+    </script>
+  </body>
+</html>
