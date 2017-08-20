@@ -2,100 +2,116 @@
 <html lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Connecting jobs using machine learning.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="@DesireYavro">
-  <script async src="site.js"></script>
-  <link rel="manifest" href="manifest.json" />
-  <title>Jobs Network Chart</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Connecting jobs using machine learning.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="@DesireYavro">
+    <script async src="site.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <title>Jobs Network Chart</title>
 
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-<link rel="manifest" href="images/favicons/manifest.json">
-<meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
 
-<!-- ===========================
+    <!-- ===========================
 FONTS & ICONS
 =========================== -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- bootstrap component -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- bootstrap component -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#2E3AA1">
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#2E3AA1">
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-  <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Jobs Network Chart">
-  <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Jobs Network Chart">
+    <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Jobs Network Chart">
-  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Jobs Network Chart">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
 
-  <!-- Tile icon for Win8 (144x144) -->
-  <meta name="msapplication-TileImage" content="images/favicons/ms-touch-icon-144x144-precomposed.png">
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/favicons/ms-touch-icon-144x144-precomposed.png">
 
-  <!-- For shared styles, shared-styles.html import in elements.html -->
-  <style is="custom-style" include="shared-styles"></style>
+    <!-- For shared styles, shared-styles.html import in elements.html -->
+    <style is="custom-style" include="shared-styles"></style>
 
-  <script type="text/javascript">
-  function createKeenWebAutoCollector(){
-    window.keenWebAutoCollector=window.KeenWebAutoCollector.create({projectId:'5979efa3c9e77c00012a2a07',writeKey:'9BD9FCB8CD2ECDE6014C5CF00688BFF4B33CCB24B62C196EC12CA3E3FE93668CE154CE10F58C5CBC1FFE525395AEBFD55EC9365E75791CBF43197941217F4B51EAA5AA55F3989F57712CE9C567D439D5669D9D7E0FA827CAAB1B1951CDB90316',onloadCallbacks:window.keenWebAutoCollector.onloadCallbacks}),
-  window.keenWebAutoCollector.loaded()
-  }
-  function initKeenWebAutoCollector(){
-    window.keenWebAutoCollector.domReady()?window.createKeenWebAutoCollector():document.addEventListener("readystatechange",function(){window.keenWebAutoCollector.domReady()&&window.createKeenWebAutoCollector()})}window.keenWebAutoCollector={onloadCallbacks:[],onload:function(a){this.onloadCallbacks.push(a)},domReady:function(){return["ready","complete"].indexOf(document.readyState)>-1}
-  };
-  </script>
-<script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
-</script>
+    <script type="text/javascript">
+        function createKeenWebAutoCollector() {
+            window.keenWebAutoCollector = window.KeenWebAutoCollector.create({
+                    projectId: '5979efa3c9e77c00012a2a07',
+                    writeKey: '9BD9FCB8CD2ECDE6014C5CF00688BFF4B33CCB24B62C196EC12CA3E3FE93668CE154CE10F58C5CBC1FFE525395AEBFD55EC9365E75791CBF43197941217F4B51EAA5AA55F3989F57712CE9C567D439D5669D9D7E0FA827CAAB1B1951CDB90316',
+                    onloadCallbacks: window.keenWebAutoCollector.onloadCallbacks
+                }),
+                window.keenWebAutoCollector.loaded()
+        }
+
+        function initKeenWebAutoCollector() {
+            window.keenWebAutoCollector.domReady() ? window.createKeenWebAutoCollector() : document.addEventListener("readystatechange", function() {
+                window.keenWebAutoCollector.domReady() && window.createKeenWebAutoCollector()
+            })
+        }
+        window.keenWebAutoCollector = {
+            onloadCallbacks: [],
+            onload: function(a) {
+                this.onloadCallbacks.push(a)
+            },
+            domReady: function() {
+                return ["ready", "complete"].indexOf(document.readyState) > -1
+            }
+        };
+    </script>
+    <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
+    </script>
 
 </head>
 
 <body unresolved class="fullbleed layout vertical">
-<span id="browser-sync-binding"></span>
+    <span id="browser-sync-binding"></span>
 
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-<div id="map">
-  <iframe  width="1325" height="600" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;sdb=1&amp;rmax=100000&amp;q=select+col2%2C+col1%2C+col4+from+1-4cIk1zlDgf0QdIIU1TxzgIJqBBl22hGYCeRncap&amp;qrs=+where+col2+%3E%3D+&amp;qre=+and+col2+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_3er_2s_-4o_3iu_-m_-4b_3it_-e_-2o_kt_5l_4x_34l_2n_-2m_3fe_4v_v_3fd_1y_2b_kr_45_4v_336_-5w_4a_3iq_-2j_q_3ir_-3d_-1l_3fc_3d_1y_n_-6k_-1s_335_-8z_5b_3bj_3n_-a_3is_1d_-4v_3a6_m_-4o_3p7_-w_18_1ur_-j_-5_3p2_-61_h_334_-91_38_3e8_-3l_4k_8u_71_6g_3bi_60_-2w_2nh_1p_-19_15_-9g_z_3fa_4m_-2_34b_12_-2b_m_-6h_-3j_34a_r_15_2aa_-5h_-53_3ip_-31_-b_39w_-2_69_3p6_-1_1t_15i_4z_67_ka_-4r_-3c_3p1_-5t_1y_365_3s_-1b_g9_-2g_-15_3a5_1w_-1v_3f2_2i_y_3es_3u_-28_3e6_-32_6a_2q3_9_-1q_3bh_2j_-3h_39v_-1d_55_93_-8v_-4e_8b_-35_-2j_3ei_-2q_-3m_332_-6s_5w_%22%2C%22cx%22%3A-69.65916069530519%2C%22cy%22%3A12.42419485569471%2C%22sw%22%3A1816.9208098150702%2C%22sh%22%3A631.8099112319894%2C%22z%22%3A1.0003968423317886%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1325&amp;height=600">
+        <div id="map">
+            <iframe width="1325" height="600" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;sdb=1&amp;rmax=100000&amp;q=select+col2%2C+col1%2C+col4+from+1-4cIk1zlDgf0QdIIU1TxzgIJqBBl22hGYCeRncap&amp;qrs=+where+col2+%3E%3D+&amp;qre=+and+col2+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_3er_2s_-4o_3iu_-m_-4b_3it_-e_-2o_kt_5l_4x_34l_2n_-2m_3fe_4v_v_3fd_1y_2b_kr_45_4v_336_-5w_4a_3iq_-2j_q_3ir_-3d_-1l_3fc_3d_1y_n_-6k_-1s_335_-8z_5b_3bj_3n_-a_3is_1d_-4v_3a6_m_-4o_3p7_-w_18_1ur_-j_-5_3p2_-61_h_334_-91_38_3e8_-3l_4k_8u_71_6g_3bi_60_-2w_2nh_1p_-19_15_-9g_z_3fa_4m_-2_34b_12_-2b_m_-6h_-3j_34a_r_15_2aa_-5h_-53_3ip_-31_-b_39w_-2_69_3p6_-1_1t_15i_4z_67_ka_-4r_-3c_3p1_-5t_1y_365_3s_-1b_g9_-2g_-15_3a5_1w_-1v_3f2_2i_y_3es_3u_-28_3e6_-32_6a_2q3_9_-1q_3bh_2j_-3h_39v_-1d_55_93_-8v_-4e_8b_-35_-2j_3ei_-2q_-3m_332_-6s_5w_%22%2C%22cx%22%3A-69.65916069530519%2C%22cy%22%3A12.42419485569471%2C%22sw%22%3A1816.9208098150702%2C%22sh%22%3A631.8099112319894%2C%22z%22%3A1.0003968423317886%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1325&amp;height=600">
   </iframe>
 
-</div>
+        </div>
 
-  </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
-  </template>
+    <footer id="footer">
 
-<footer id="footer">
+        <ul class="menu">
+            <p>&copy; 2017 <a href="desireyavro.com">desireyavro</a> - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i>
+                <a href="job_titles_table.html" class="btn btn-default" style="background-color:#bbdcf7">Check Closest Job titles Table</a>
+            </p>
+        </ul>
 
-      <ul class="menu">
-          <p>&copy; 2017 <a href="desireyavro.com">desireyavro</a> - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i>
-            <a href="job_titles_table.html" class="btn btn-default" style="background-color:#bbdcf7">Check Closest Job titles Table</a>
-          </p>
-      </ul>
+    </footer>
 
-          </footer>
-
-<!-- build:js scripts/app.js -->
-<!--<script src="scripts/app.js"></script>
+    <!-- build:js scripts/app.js -->
+    <!--<script src="scripts/app.js"></script>
 <script src="../bower_components/leaflet/dist/leaflet-src.js"></script>-->
-<!-- endbuild-->
+    <!-- endbuild-->
 </body>
+
 </html>
